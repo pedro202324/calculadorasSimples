@@ -57,7 +57,7 @@ function calculate() {
 
     const formattedResult = formatNumber(resultNum.toFixed(6).replace('.', ',').replace(/,?0+$/, ''));
     history.push({ expr: formatNumber(current.replace(/\./g, ',')), result: formattedResult });
-    current = formattedResult.replace(/\./g, '').replace(/,/g, '.'); // mantém formatado para continuação
+    current = formattedResult.replace(/\./g, '').replace(/,/g, '.');
   } catch {
     current = 'Erro';
   }
